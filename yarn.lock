@@ -10715,6 +10715,14 @@ optipng-bin@^6.0.0:
     bin-wrapper "^4.0.0"
     logalot "^2.0.0"
 
+optipng-bin@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/optipng-bin/-/optipng-bin-9.0.0.tgz#4a27b6c265003ece4ab5b852424c06269fc7e817"
+  integrity sha512-uDcmcNK4MRSM5ezLThUPI7fc9ZxlQMqnxhWxIc7foCcUZZ2LvzbcJwwVEsU78tC3t9B68dwE4y/m6at10Z93UA==
+  dependencies:
+    bin-build "^3.0.0"
+    bin-wrapper "^4.0.0"
+
 original@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/original/-/original-1.0.2.tgz"

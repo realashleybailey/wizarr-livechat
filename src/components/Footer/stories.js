@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { h } from 'preact';
 import '../../i18next';
 
-import { Footer, FooterContent, FooterOptions, PoweredBy } from '.';
+import { Footer, FooterContent, FooterOptions } from '.';
 import ChangeIcon from '../../icons/change.svg';
 import FinishIcon from '../../icons/finish.svg';
 import RemoveIcon from '../../icons/remove.svg';
@@ -23,13 +23,6 @@ const bottomWithPopoverContainer = (storyFn) => (
 
 storiesOf('Components/Footer', module)
 	.addDecorator(bottomWithPopoverContainer)
-	.add('simple', () => (
-		<Footer>
-			<FooterContent>
-				<PoweredBy />
-			</FooterContent>
-		</Footer>
-	))
 	.add('with Composer and options', () => (
 		<Footer>
 			<FooterContent>
@@ -43,7 +36,6 @@ storiesOf('Components/Footer', module)
 						<Menu.Item danger onClick={action('finish-chat')} icon={FinishIcon}>Finish this chat</Menu.Item>
 					</Menu.Group>
 				</FooterOptions>
-				<PoweredBy />
 			</FooterContent>
 		</Footer>
 	));

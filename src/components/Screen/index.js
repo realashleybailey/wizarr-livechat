@@ -4,7 +4,7 @@ import { useEffect } from 'preact/hooks';
 import ChatIcon from '../../icons/chat.svg';
 import CloseIcon from '../../icons/close.svg';
 import { Button } from '../Button';
-import { Footer, FooterContent, PoweredBy } from '../Footer';
+import { Footer, FooterContent } from '../Footer';
 import { PopoverContainer } from '../Popover';
 import { Sound } from '../Sound';
 import { createClassName } from '../helpers';
@@ -28,7 +28,6 @@ export const ScreenFooter = ({ children, options, limit }) => (
 		<FooterContent>
 			{options}
 			{limit}
-			<PoweredBy />
 		</FooterContent>
 	</Footer>
 );
