@@ -2,3 +2,4 @@
 !/.storybook
 
 src/i18next.js
+server.js

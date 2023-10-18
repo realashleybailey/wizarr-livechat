@@ -4,6 +4,7 @@
 	"files": [
 		"/build"
 	],
+	"homepage": "/livechat",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
@@ -15,7 +16,7 @@
 		"build:pack": "cp widget-demo.html ./build && tar -C build -czf build.tar.gz '.'",
 		"build": "run-s clean build:app build:pack",
 		"start": "webpack-dev-server --mode development",
-		"serve": "serve --debug build -l 9000",
+		"serve": "node server.js",
 		"dev": "webpack --mode development --watch",
 		"lint": "run-s eslint stylelint",
 		"eslint": "eslint src",
