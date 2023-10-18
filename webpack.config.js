@@ -147,13 +147,15 @@ module.exports = (env, argv) => [
 				),
 			}),
 			new HtmlWebpackPlugin({
-				title: 'Rocket.Chat.Livechat',
+				title: 'Livechat',
 				chunks: [
 					'polyfills',
 					'vendor',
 					'bundle',
 				],
 				chunksSortMode: 'manual',
+				// auto add ?v=hash to the end of the script and link tags
+				hash: true,
 			}),
 		],
 		optimization: {
